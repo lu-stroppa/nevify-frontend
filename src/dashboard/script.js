@@ -1,7 +1,7 @@
 // =========================
 // Configurações
 // =========================
-const BASE_URL = "nevify.up.railway.app/api"; 
+const BASE_URL = "https://nevify.up.railway.app/api"; 
 let currentType = "home";  
 let currentSort = "recent"; 
 let searchTimeout;
@@ -682,3 +682,4 @@ window.onload = () => {
     showMovies("home");
 
 };
+
