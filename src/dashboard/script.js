@@ -1,7 +1,7 @@
 // =========================
 // Configurações
 // =========================
-const BASE_URL = "http://localhost:5000/api"; 
+const BASE_URL = "nevify.up.railway.app/api"; 
 let currentType = "home";  
 let currentSort = "recent"; 
 let searchTimeout;
@@ -680,4 +680,5 @@ window.onload = () => {
     if (mobileHome) mobileHome.classList.add('active');
 
     showMovies("home");
+
 };
