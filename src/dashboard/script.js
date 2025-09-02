@@ -437,7 +437,7 @@ function showSettings() {
             <label for="password">Alterar senha:</label>
             <div class="password-wrapper">
                 <input type="password" id="new-password" placeholder="Nova senha">
-                <i class="password-icon fa fa-eye"></i>
+                <i class="password-icon fa fa-eye-slash"></i>
             </div>
             <button id="change-password-btn">Salvar</button>
         </div>
@@ -682,4 +682,5 @@ window.onload = () => {
     showMovies("home");
 
 };
+
 
