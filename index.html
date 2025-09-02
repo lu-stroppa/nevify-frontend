@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Nevify | Descubra Filmes & Séries</title>
+    <link rel="icon" type="image/png" href="./src/img/1-2f8abca6.ico">
+</head>
+<body>
+    <div class="content">
+        <h1>Nevify <i class="fa-solid fa-film"></i></h1>
+        <p>Entre para continuar</p>
+
+        <!-- Formulário de Login -->
+        <form action="" id="login-form">
+            <div class="input-box">
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="login-username" placeholder="Nome de usuário" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="login-password" placeholder="Digite sua senha" required>
+                    <i class="fa-regular fa-eye-slash password-icon"></i>
+                </div>
+            </div>
+            <button type="submit" class="btn-default">Entrar</button>
+            <p class="form-switch">Não possui conta? <a href="#" id="open-register">Cadastre-se aqui!</a></p>
+        </form>
+    </div>
+
+    <!-- Modal Registro -->
+    <div id="modal" class="hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-box">
+            <div id="form_header">
+                <h2 id="modal-title">Registrar</h2>
+                <button class="btn-close" id="close-modal">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </div>
+
+            <form id="register-form">
+                <div id="input_container">
+                    <!-- Nome completo -->
+                    <div class="input-box input-full">
+                        <div class="input-field">
+                            <i class="fa fa-user"></i>
+                            <input type="text" id="full_name" placeholder="Nome completo" required>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <!-- Nome de usuário -->
+                    <div class="input-box">
+                        <div class="input-field">
+                            <i class="fa fa-user"></i>
+                            <input type="text" id="username" placeholder="Nome de usuário" maxlength="16" required>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <!-- Data de nascimento -->
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="date" id="birth" required>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <!-- Email -->
+                    <div class="input-box input-full">
+                        <div class="input-field">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" id="email" placeholder="Email" required>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <!-- Senha -->
+                    <div class="input-box">
+                        <div class="input-field">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="password" placeholder="Senha" required>
+                            <i class="fa-regular fa-eye-slash password-icon"></i>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                    <!-- Confirmar senha -->
+                    <div class="input-box">
+                        <div class="input-field">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="confirm_password" placeholder="Confirme a senha" required>
+                            <i class="fa-regular fa-eye-slash password-icon"></i>
+                        </div>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn-default">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Feito por Lxksz.</p>
+        <div class="footer-links">
+            <a href="https://github.com/lu-stroppa" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <i class="fa-regular fa-snowflake"></i>
+            <a href="https://www.linkedin.com/in/lucas-stroppa1210" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="src/index/script.js"></script>
+</body>
+</html>

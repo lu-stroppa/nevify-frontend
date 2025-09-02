@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevify | Dashboard</title>
+    <link rel="icon" type="image/png" href="./src/img/1-2f8abca6.ico">
+    <link rel="stylesheet" href="src/dashboard/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav id="sidebar">
+    <div id="sidebar_content">
+        <div id="user">
+            <img src="src/img/logo1.png" id="logo" alt="Logo">
+            <p id="user_infos">
+                <span class="greeting">Olá, </span>
+                <span class="username">Lucas Stroppa</span>
+            </p>
+        </div>
+        <ul id="side_items">
+            <!-- Página inicial adicionada -->
+            <li class="side-item" id="home-btn">
+                <a href="#"><i class="fa-solid fa-house"></i><span class="item-description">Início</span></a>
+            </li>
+            <li class="side-item active" id="popular-btn">
+                <a href="#"><i class="fa-solid fa-fire"></i><span class="item-description">Populares</span></a>
+            </li>
+            <li class="side-item" id="nowplaying-btn">
+                <a href="#"><i class="fa-solid fa-film"></i><span class="item-description">Em Cartaz</span></a>
+            </li>
+            <li id="upcoming-btn" class="side-item">
+                <a href="#"><i class="fa-solid fa-calendar-plus"></i><span class="item-description">Próximas Estreias</span></a>
+            </li>
+            <li class="side-item" id="top-rated-btn">
+                <a href="#"><i class="fa-solid fa-star"></i><span class="item-description">Mais Avaliados</span></a>
+            </li>
+            <li class="side-item" id="favorites-btn">
+                <a href="#"><i class="fa-solid fa-heart"></i><span class="item-description">Favoritos</span></a>
+            </li>
+
+            <li class="side-item" id="settings-btn">
+                <a href="#"><i class="fa-solid fa-gear"></i><span class="item-description">Configurações</span></a>
+            </li>
+
+        </ul>
+
+        <button id="open_btn"><i id="open_btn_icon" class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div id="logout">
+        <button id="logout_btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="item-description">Logout</span>
+        </button>
+    </div>
+</nav>
+
+
+<!-- Topnav Mobile -->
+<nav id="topnav">
+    <div class="topnav-left">
+        <img src="src/img/logo1.png" class="topnav-logo" alt="Logo">
+    </div>
+    <button id="hamburger-btn"><i class="fa-solid fa-bars"></i></button>
+</nav>
+
+<!-- Mobile Menu Dropdown -->
+<div id="mobile-menu">
+            <p id="mobile_user_infos">
+                <span class="greeting">Olá, </span>
+                <span class="username">Lucas Stroppa</span>
+            </p>
+    <ul id="mobile-items">
+        <li class="mobile-side-item" data-target="home-btn"><a href="#"><i class="fa-solid fa-house"></i>Início</a></li>
+        <li class="mobile-side-item" data-target="popular-btn"><a href="#"><i class="fa-solid fa-fire"></i>Populares</a></li>
+        <li class="mobile-side-item" data-target="nowplaying-btn"><a href="#"><i class="fa-solid fa-film"></i>Em Cartaz</a></li>
+        <li class="mobile-side-item" data-target="upcoming-btn"><a href="#"><i class="fa-solid fa-calendar-plus"></i>Próximas Estreias</a></li>
+        <li class="mobile-side-item" data-target="top-rated-btn"><a href="#"><i class="fa-solid fa-star"></i>Mais Avaliados</a></li>
+        <li class="mobile-side-item" data-target="favorites-btn"><a href="#"><i class="fa-solid fa-heart"></i>Favoritos</a></li>
+        <li class="mobile-side-item" data-target="settings-btn"><a href="#"><i class="fa-solid fa-gear"></i>Configurações</a></li>
+    </ul>
+    <button id="mobile-logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+</div>
+
+<!-- Main -->
+<main>
+    <div id="container">
+        <h1 id="page-title">Bem-vindo(a)!</h1>
+
+        <!-- Caixa de busca -->
+        <div id="search-box">
+            <input type="text" id="search-input" placeholder="Pesquisar filmes...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Filtros favoritos -->
+        <div id="favorites-controls" style="display: none;">
+            <div class="custom-select">
+                <div class="select-selected">Mais Recentes</div>
+                <div class="select-items">
+                    <div data-value="recent">Mais Recentes</div>
+                    <div data-value="rated">Mais Bem Avaliados</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid de filmes -->
+        <div id="movies"></div>
+    </div>
+</main>
+
+<script src="src/dashboard/script.js" type="module"></script>
+</body>
+</html>
