@@ -361,6 +361,8 @@ footer a:hover {
     #form_header {
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     #form_header h2 {
@@ -429,3 +431,4 @@ footer a:hover {
     }
 
 }
+
