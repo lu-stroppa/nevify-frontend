@@ -55,7 +55,7 @@ document.querySelectorAll('.password-icon').forEach(icon => {
 });
 
 // ---------------- CONFIG ----------------
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'nevify.up.railway.app/api';
 
 // ---------------- VALIDATORS ----------------
 function emailIsValid(value) {
@@ -189,4 +189,5 @@ loginForm.addEventListener("submit", async e => {
 // ---------------- REMOVER ERROS AO DIGITAR ----------------
 document.querySelectorAll('.form-control').forEach(input => {
   input.addEventListener('input', () => clearInlineError(input));
+
 });
